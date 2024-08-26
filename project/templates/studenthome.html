@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="complaints">Complaints</a>
+    <a href="view">viewcomplaints</a>
+    
+            <p>first_name</p>
+            <p>username</p>
+            <p>password</p>
+            <p>RollNo</p>
+            <p>Branch</p>
+            <p>Image</p>
+            <p></p>
+
+        
+        
+            <p>{{data.first_name}}</p>
+            <p>{{data.username}}</p>
+            <p>{{data.password}}</p>
+            <p>{{data.RollNo}}</p>
+            <p>{{data.Branch}}</p>
+            <p><img src="{{data.Image.url}}" alt=""width="150px" height="150px"></p>
+            <p><a href="{% url 'edit' id=data.id %}">Edit</a></p>
+            
+
+        
+
+</body>
+</html>
