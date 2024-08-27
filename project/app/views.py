@@ -116,8 +116,8 @@ def complaints(request):
     data=Students.objects.get(id=request.user.id)
     
     if request.method=="POST":
-        complaint_name=request.POST['complaint_name']
-        description=request.POST['description']
+        complaint_name=request.POST['Teacher']
+        description=request.POST['complaint']
         data1=Complaints.objects.create(user_id=data,complaint_name=complaint_name,description=description)
         data1.save()
         return redirect(studenthome)
