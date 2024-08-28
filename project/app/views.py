@@ -131,8 +131,8 @@ def viewcomplaints(request):
 
 
 def teacherview(request):
-    data1=Students.objects.get(id=request.user.id)
-    data=Complaints.objects.filter(user_id=data1)
+    #data1=Students.objects.get(id=request.user.id)
+    data=Complaints.objects.all()
     return render(request,'teacherview.html',{'data':data})
 
 
